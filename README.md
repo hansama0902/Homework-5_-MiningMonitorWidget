@@ -20,7 +20,7 @@ This will make the widget available as a reusable component. Observable’s reac
 
 ## How to load data (CSV)
 
-To load your mining machine data, you can upload a file named `simple.csv` (or any other valid CSV), and use the following method:
+To load your mining machine data, you can upload a file named `completed_mining_machine_table.csv` (or any other valid CSV), and use the following method:
 
 viewof uploadedMachines = {
   const file = await FileAttachment("simple.csv").csv({typed: true});
@@ -56,7 +56,7 @@ The widget accepts the following configuration options:
 ---
 
 
-## Example CSV (simple.csv)
+## Example CSV (completed_mining_machine_table.csv)
 
 id,name,status,temperature,hashrate,uptime,location
 miner-1,Mining Rig 1,Online,65,85,240,Room 1
