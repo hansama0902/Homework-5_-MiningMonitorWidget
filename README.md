@@ -84,6 +84,11 @@ The widget listens for changes in a connected status input. When the user change
 When connected using `Inputs.bind()`, it stays synchronized with external filters. This makes it ideal for dashboards where multiple views must stay in sync.
 
 ---
+## Bluesky
+
+[Link to Tweet](https://bsky.app/profile/shuhandong.bsky.social/post/3lmv52dasjc2f)
+
+---
 
 ## License
 
