@@ -16,9 +16,11 @@ The MiningMonitorWidget is a custom visual component for monitoring the operatio
 ---
 ## How to import it on Observable
 
-You can define the widget directly in a notebook by copying the MiningMonitorWidget function. If you have published it in another notebook, you can import it using:
+You can define the widget directly in a notebook by copying the MiningMonitorWidget function, which is wrapped using ReactiveWidget from the @john-guerra/reactive-widgets package to enable reactive behavior and value binding. If you have published it in another notebook, you can import it using:
 
-import { MiningMonitorWidget } from "Shuhan Dong/MiningMonitorWidget"
+import { MiningMonitorWidget } from "Shuhan Dong/MiningMonitorWidget"  
+import { ReactiveWidget } from "@john-guerra/reactive-widgets"
+
 
 This will make the widget available as a reusable component. Observable’s reactive runtime will handle reactivity and input binding automatically.
 
@@ -74,7 +76,7 @@ miner-4,Mining Rig 4,Underperforming,70,30,120,Room 2
 
 ## How it works
 
-The widget listens for changes in a connected status input. When the user changes the selected statuses, the widget updates the summary chart, table, and stats. The data must be preloaded and passed in through the `machines` option. Using Inputs.bind allows the widget to synchronize its internal state with external controls. This setup creates a flexible, reactive, and user-friendly monitoring panel for dashboard applications.
+The widget listens for changes in a connected status input. When the user changes the selected statuses, the widget updates the summary chart, table, and stats. The data must be preloaded and passed in through the `machines` option. Using ReactiveWidget with Inputs.bind() allows the widget to synchronize its internal state (value) with external controls such as checkboxes or sliders. This setup creates a flexible, reactive, and user-friendly monitoring panel for dashboard applications.
 
 
 1. A summary chart that shows the proportion of each status.
