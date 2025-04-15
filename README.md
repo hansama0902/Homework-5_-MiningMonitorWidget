@@ -8,6 +8,12 @@ The MiningMonitorWidget is a custom visual component for monitoring the operatio
 
 ---
 
+## Observable Notebook Link
+
+[Link to Observable Notebook](https://observablehq.com/d/17ad2f133c3f874a)
+
+
+---
 ## How to import it on Observable
 
 You can define the widget directly in a notebook by copying the MiningMonitorWidget function. If you have published it in another notebook, you can import it using:
